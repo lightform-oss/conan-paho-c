@@ -45,7 +45,7 @@ of Things (IoT)"""
 
     def requirements(self):
         if self.options.SSL:
-            self.requires("OpenSSL/1.0.2s@conan/stable")
+            self.requires("openssl/1.0.2t@conan/stable")
 
     def _configure_cmake(self):
         cmake = CMake(self)
